@@ -1,11 +1,13 @@
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 import streamlit as st
 
 load_dotenv()
-model=ChatGoogleGenerativeAI(model='gemini-2.5-flash')
 
-st.header('Chat with Google Gemini')
+model = ChatOpenAI(model_name='gpt-3.5-turbo', temperature=0.7)
+
+
+st.header('Chat with OpenAI')
 
 user_input = st.text_input('Enter your Prompt')
 
