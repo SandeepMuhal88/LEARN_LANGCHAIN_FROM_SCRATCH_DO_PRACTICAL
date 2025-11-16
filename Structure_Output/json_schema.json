@@ -1,0 +1,12 @@
+{
+    "title": "Student",
+    "description": "Student details",
+    "type": "object",
+    "properties":{
+        "name":"string",
+        "age":"integer",
+        "gender":"string",
+        "marks":"integer"
+    },
+    "required":["name","age","gender","marks"]
+}
