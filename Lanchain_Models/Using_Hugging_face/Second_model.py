@@ -3,9 +3,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llms=HuggingFaceEndpoint(
-    repo_id="moonshotai/Kimi-K2-Thinking",
-    task="text-generation",
+llm = HuggingFaceEndpoint(
+    repo_id="google/gemma-2-2b-it",
+    task="text-generation"
 )
 
 model=ChatHuggingFace(llm=llms)

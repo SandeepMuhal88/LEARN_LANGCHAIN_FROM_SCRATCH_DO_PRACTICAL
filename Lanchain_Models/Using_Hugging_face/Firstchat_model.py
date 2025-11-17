@@ -4,13 +4,12 @@ from dotenv import load_dotenv
 from Learn_Langchain.Lanchain_Models.LLMS.tempCodeRunnerFile import llm
 
 load_dotenv()
-
-llms=HuggingFaceEndpoint(
-    repo_id="TinyLlama/TinyLlama-1.1B-Chat-v1.0",
-    task="text-generation",
+llm = HuggingFaceEndpoint(
+    repo_id="google/gemma-2-2b-it",
+    task="text-generation"
 )
 
-model=ChatHuggingFace(llm=llms)
+model=ChatHuggingFace(llm=llm)
 
 result=model.invoke("What is capital of India")
 
