@@ -1,7 +1,9 @@
-from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
+from langchain_huggingface_endpoint import HuggingFaceEndpoint
+from langchain_chat_huggingface import ChatHuggingFace
+from langchain.prompts import PromptTemplate
+from langchain.output_parsers import JsonOutputParser
 from dotenv import load_dotenv
-from langchain_core.output_parsers import JsonOutputParser
-from langchain_core.prompts import PromptTemplate
+
 
 load_dotenv()
 

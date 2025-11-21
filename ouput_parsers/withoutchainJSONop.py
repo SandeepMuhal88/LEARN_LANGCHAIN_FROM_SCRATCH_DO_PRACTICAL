@@ -22,6 +22,9 @@ template_01= PromptTemplate(
 )
 
 # prompt=template_01.invoke({'topic':'black hole'})
-prompt=template_01.invoke()
-response=model.invoke(prompt)
-print(response)
+prompt=template_01.format()
+
+result=model.invoke(prompt)
+final_result=parser.parse(result)
+print(final_result)
+print(type(final_result))
