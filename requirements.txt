@@ -63,4 +63,3 @@ filetype
 # OPTIONAL
 ##############################
 streamlit
-altair
